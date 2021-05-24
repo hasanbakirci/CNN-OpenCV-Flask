@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  {% block head %} 
+  <title>sonuc</title>
+  {% endblock %}
+
+</head>
+<body>
+  {% block body %}
+<div class="position-absolute top-50 start-50">
+  <form action="http://localhost:5000/" enctype="multipart/form-data" method="GET"> 
+    <h1>{{cnn_model}}</h1>
+    <input type="submit" value="ANASAYFA"/>
+</div>
+
+{% endblock %}
+</body>
+</html>

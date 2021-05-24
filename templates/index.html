@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  {% block head %} 
+  <title>index</title>
+  {% endblock %}
+
+</head>
+<body>
+  {% block body %}
+
+<div class="position-absolute bottom-50 end-50">
+  <form action="http://localhost:5000/upload" enctype=multipart/form-data method="POST"> 
+   <input type="file" name="file" />
+   <input type="submit" value="Yükle"/>
+</form>
+</div>
+
+{% endblock %}
+</body>
+</html>
